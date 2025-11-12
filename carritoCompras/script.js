@@ -19,12 +19,9 @@ function agregar(producto) {
 }
 
 function vaciar() {
-    let contadores = document.getElementsByClassName("contador");
-
-    for (let i = 0; i < contadores.length; i++) {
-        contadores[i].innerText = 0;
-    }
-
+    document.getElementById("total-bombones").innerText = 0;
+    document.getElementById("total-chocolatina").innerText = 0;
+    document.getElementById("total-gomitas").innerText = 0;
     document.getElementById("total-precio").innerText = 0;
 
     alert("Carrito vaciado")
